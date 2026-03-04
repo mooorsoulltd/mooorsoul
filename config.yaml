@@ -1,0 +1,22 @@
+# Configuration Settings for Video Analysis Models
+
+## Processing Parameters
+parameters:
+  frame_rate: 30
+  resolution: 1920x1080
+  output_format: mp4
+
+## Model Settings
+models:
+  object_detection:
+    enabled: true
+    model_path: "models/yolo.weights"
+  action_recognition:
+    enabled: true
+    model_path: "models/i3d.pb"
+
+## AI Naming Settings
+ai_naming:
+  default_name: "VideoAnalyzerAI"
+  name_prefix: "VA_"
+  name_suffix: "_v1"
